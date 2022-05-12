@@ -1,0 +1,16 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 70% 30%; /*Defines how many columns in the entire width, and how much width each colum*/
+    grid-column-gap: 1em; /*Instead of margin, use gap for spacing between columns or rows*/
+    grid-row-gap: 1em; /*Instead of margin, use gap for spacing between columns or rows*/
+   
+}
+
+.wrapper > div { 
+    background-color: #eee;
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+    background-color: #ddd;
+}

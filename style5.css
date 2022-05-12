@@ -1,0 +1,39 @@
+.b1 {}
+.b2 {}
+.b3 {}
+.b4 {}
+
+body {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+}
+/*xs*/
+@media screen and (max-width: 400px) {
+    body {
+        background-color: red;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    body {
+        background-color: green;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    body {
+        background-color: blue;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-color: yellow;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
